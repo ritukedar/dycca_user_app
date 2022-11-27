@@ -51,4 +51,13 @@ const registrationVerifyOtpRoute = '/registrationVerifyOtpRoute';
 const registerationRoute = '/registerationRoute';
 const selectYourProfessionRoute = '/selectYourProfessionRoute';
 const homeRoute = '/homeRoute';
+const detailsOfCompetitionRoute = '/detailsOfCompetitionRoute';
+const omeRoute = '/homeRoute';
+const hmeRoute = '/homeRoute';
+const hoeRoute = '/homeRoute';
+const homeRute = '/homeRoute';
+const omeRoue = '/homeRoute';
+const homeRout = '/homeRoute';
+
+
 
