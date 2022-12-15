@@ -4,6 +4,8 @@ import 'package:dycca_user_app/screens/authentication/registration_verify_number
 import 'package:dycca_user_app/screens/authentication/registration_verify_otp_screen.dart';
 import 'package:dycca_user_app/screens/authentication/select_your_profession_screen.dart';
 import 'package:dycca_user_app/screens/authentication/splash_screen.dart';
+import 'package:dycca_user_app/screens/home/booking_battle_screen.dart';
+import 'package:dycca_user_app/screens/home/booking_screen.dart';
 import 'package:dycca_user_app/screens/home/details_of_competition_screen.dart';
 import 'package:dycca_user_app/screens/home/home_screen.dart';
 import 'package:dycca_user_app/utils/constants.dart';
@@ -20,8 +22,8 @@ class Routes{
       selectYourProfessionRoute: (context) =>  SelectYourProfessionScreen(),
       homeRoute: (context) =>  HomeScreen(),
       detailsOfCompetitionRoute: (context) =>  DetailsOfCompetitionScreen(),
-      selectYourProfessionRoute: (context) =>  SelectYourProfessionScreen(),
-      selectYourProfessionRoute: (context) =>  SelectYourProfessionScreen(),
+      bookingBattleRoute: (context) =>  const BookingBattleScreen(),
+      myBookingRoute: (context) =>  const MyBookingSCreen(),
       selectYourProfessionRoute: (context) =>  SelectYourProfessionScreen(),
 
     };

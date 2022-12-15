@@ -18,33 +18,38 @@ class _DetailsOfCompetitionScreenState extends State<DetailsOfCompetitionScreen>
       bottomNavigationBar: Row(
         children: [
           Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                color: primaryColor.withOpacity(0.1),
-              ),
-              height: 55,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(
-                  child: Column(
-                    children: [
-                      Text(
-                        "INR 500/each",
-                        style: appFontStyle(
-                          color: primaryColor,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
+            child: GestureDetector(
+              onTap: () {
+                 Navigator.pushNamed(context, bookingBattleRoute);
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: primaryColor.withOpacity(0.1),
+                ),
+                height: 55,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        Text(
+                          "INR 500/each",
+                          style: appFontStyle(
+                            color: primaryColor,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "Book alone",
-                        style: appFontStyle(
-                          color: primaryColor,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400,
+                        Text(
+                          "Book alone",
+                          style: appFontStyle(
+                            color: primaryColor,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -104,7 +109,9 @@ class _DetailsOfCompetitionScreenState extends State<DetailsOfCompetitionScreen>
         physics: const ScrollPhysics(),
         child: Column(
           children: [
-            Image.asset('assets/images/profile_details.png'),
+            FittedBox(
+              fit: BoxFit.cover,
+                child: Image.asset('assets/images/dance.jpeg')),
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child:
@@ -119,7 +126,12 @@ class _DetailsOfCompetitionScreenState extends State<DetailsOfCompetitionScreen>
                               borderRadius:
                               BorderRadius.all(Radius.circular(10)),
                               color: primaryColor,
-                            )),
+                            ),
+                          // child: FittedBox(
+                          //   fit: BoxFit.cover,
+                          //     child: Image.asset('assets/images/images.jpeg')),
+
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 15.0),
                           child: Column(
@@ -471,7 +483,7 @@ class _DetailsOfCompetitionScreenState extends State<DetailsOfCompetitionScreen>
                     ),
                   ),
 
-                  const SizedBox(height: 40,),
+                  const SizedBox(height: 10,),
                 ],
               ),
             ),
