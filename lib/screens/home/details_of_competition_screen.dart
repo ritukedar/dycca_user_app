@@ -58,7 +58,7 @@ class _DetailsOfCompetitionScreenState extends State<DetailsOfCompetitionScreen>
           Expanded(
             child: GestureDetector(
               onTap: () {
-
+Navigator.pushNamed(context, danceVideoRoute);
               },
               child: Container(
                 decoration: const BoxDecoration(

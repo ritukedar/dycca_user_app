@@ -78,7 +78,7 @@ class TextSearchWidget extends StatelessWidget {
             const EdgeInsets.only(top: 18, bottom: 18, left: 16),
             enabledBorder: OutlineInputBorder(
               borderRadius: const BorderRadius.all(
-                Radius.circular(3.0),
+                Radius.circular(10.0),
               ),
               borderSide:
               BorderSide(color: isError ? semantic1Color : neutral4Color.withOpacity(0.5)),

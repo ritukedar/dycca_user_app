@@ -18,6 +18,7 @@ class TextfieldWidget extends StatelessWidget {
   int minLines;
   int maxLines;
   Color fillColor;
+  Color borderColour;
   bool isReadonly;
   int maxLength;
   List<TextInputFormatter> formatters;
@@ -36,6 +37,7 @@ class TextfieldWidget extends StatelessWidget {
     this.minLines = 1,
     this.maxLines = 1,
     this.fillColor = neutral3Color,
+    this.borderColour = Colors.transparent,
     this.isReadonly = false,
     this.maxLength = 1000,
     this.formatters = const [],
@@ -58,6 +60,9 @@ class TextfieldWidget extends StatelessWidget {
           style: fontStyle(neutral6Color, FontWeight.w400, 16),
           decoration: InputDecoration(
             counterText: '',
+            border: const OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.red)
+            ),
             prefixIcon: Padding(
               padding: const EdgeInsets.only(top: 8.0,bottom: 8,left: 15,right: 10),
               child: prefixSvgImage,

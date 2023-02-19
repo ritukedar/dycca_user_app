@@ -6,7 +6,9 @@ import 'package:dycca_user_app/screens/authentication/select_your_profession_scr
 import 'package:dycca_user_app/screens/authentication/splash_screen.dart';
 import 'package:dycca_user_app/screens/home/booking_battle_screen.dart';
 import 'package:dycca_user_app/screens/home/booking_screen.dart';
+import 'package:dycca_user_app/screens/home/dance_video_screen.dart';
 import 'package:dycca_user_app/screens/home/details_of_competition_screen.dart';
+import 'package:dycca_user_app/screens/home/get_offer_price_screen.dart';
 import 'package:dycca_user_app/screens/home/home_screen.dart';
 import 'package:dycca_user_app/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -24,8 +26,8 @@ class Routes{
       detailsOfCompetitionRoute: (context) =>  DetailsOfCompetitionScreen(),
       bookingBattleRoute: (context) =>  const BookingBattleScreen(),
       myBookingRoute: (context) =>  const MyBookingSCreen(),
-      selectYourProfessionRoute: (context) =>  SelectYourProfessionScreen(),
-
+      danceVideoRoute: (context) =>  const DanceVideoScreen(),
+      getOfferPriceRoute: (context) =>  const GetOfferPriceScreen(),
     };
   }
 }

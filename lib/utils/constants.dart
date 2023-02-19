@@ -54,8 +54,8 @@ const homeRoute = '/homeRoute';
 const detailsOfCompetitionRoute = '/detailsOfCompetitionRoute';
 const bookingBattleRoute = '/bookingBattleRoute';
 const myBookingRoute = '/myBookingRoute';
-const hoeRoute = '/homeRoute';
-const homeRute = '/homeRoute';
+const danceVideoRoute = '/danceVideoRoute';
+const getOfferPriceRoute = '/getOfferPriceRoute';
 const omeRoue = '/homeRoute';
 const homeRout = '/homeRoute';
 
